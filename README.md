@@ -43,3 +43,5 @@ The operations increment or decrement do not use the parameter start. Scrapy has
     STATSD_HOST = 'localhost'
     STATSD_PORT = 8125
    ```
+
+   Optionally, set ``STATSD_PREFIX`` to prefix all your metrics in statsd.

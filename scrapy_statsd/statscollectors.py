@@ -29,7 +29,8 @@ class StatsDStatsCollector(scrapy.statscollectors.MemoryStatsCollector):
 
         self._statsd_client = statsd.StatsClient(
             host=crawler.settings.get('STATSD_HOST', 'localhost'),
-            port=crawler.settings.getint('STATSD_PORT', 8125))
+            port=crawler.settings.getint('STATSD_PORT', 8125),
+            prefix=crawler.settings.get('STATSD_PREFIX', None))
 
     @classmethod
     def _is_numeric_type(cls, value):
