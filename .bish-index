@@ -1,0 +1,4 @@
+./setup.py
+./README.md
+./scrapy_statsd/statscollectors.py
+./scrapy_statsd/__init__.py
